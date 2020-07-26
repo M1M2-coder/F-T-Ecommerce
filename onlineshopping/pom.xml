@@ -16,6 +16,12 @@
 	</properties>
 	<dependencies>
 
+		<!-- Linking the Backend Project -->
+		<dependency>
+			<groupId>com.m2m</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -30,7 +36,7 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<!-- JSTL -->
 		<dependency>
 			<artifactId>jstl</artifactId>

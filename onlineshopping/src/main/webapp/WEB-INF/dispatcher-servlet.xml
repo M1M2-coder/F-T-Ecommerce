@@ -13,6 +13,10 @@
    
 	<!-- Scanning the controller packages -->   
    	<context:component-scan base-package="com.m2m.onlineshopping.controller" />
+	
+	<!-- Scanning the repository packages -->   
+   	<context:component-scan base-package="com.m2m.shoppingbackend.daoImpl" />
+   
    
    
    	<!-- View Resolver: Map all the logical filenames to their actual physical location -->
