@@ -11,8 +11,17 @@
 
 	<properties>
 		<javaee.version>7.0</javaee.version>
+		<spring.version>4.3.6.RELEASE</spring.version>
+		<jstl.version>1.2</jstl.version>
 	</properties>
 	<dependencies>
+
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 
 		<!-- Java EE API -->
 		<dependency>
@@ -20,6 +29,13 @@
 			<artifactId>javaee-api</artifactId>
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
+		</dependency>
+		
+		<!-- JSTL -->
+		<dependency>
+			<artifactId>jstl</artifactId>
+			<groupId>jstl</groupId>
+			<version>${jstl.version}</version>
 		</dependency>
 
 		<!-- JUNIT -->
@@ -30,10 +46,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<finalName>onlineshopping</finalName>
 		<plugins>
-		<!-- Update Project to the latest JAVA version -->
+			<!-- Update Project to the latest JAVA version -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
@@ -44,7 +61,5 @@
 			</plugin>
 
 		</plugins>
-
-
 	</build>
 </project>
